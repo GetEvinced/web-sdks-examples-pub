@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@evinced/js-playwright-sdk": "^1.6.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-google": "^0.14.0",
+    "playwright": "^1.32.3",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "lint": "eslint tests support pages --ext .js,.jsx,.ts,.tsx"
+  }
+}
