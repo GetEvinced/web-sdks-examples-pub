@@ -1,0 +1,10 @@
+{
+    "axeConfig": {
+      "rules": {}
+    },
+    "logging": {
+      "LOGGING_LEVEL": "error",
+      "ADD_LOGGING_CONTEXT": true
+    },
+    "skipValidations": []
+  }

@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cucumber/cucumber": "^8.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "cypress": "^12.6.0",
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "eslint": "^8.34.0",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^4.9.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/**/*.{js,ts}"
+  },
+  "dependencies": {
+    "@evinced/cypress-sdk": "^3.12.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["google", "plugin:@typescript-eslint/recommended"],
+    "overrides": [
+        {
+            "files": ["steps.ts"],
+            "rules": {
+                "new-cap": "off"
+            }
+        },
+        {
+            "files": ["*page.ts"],
+            "rules": {
+                "require-jsdoc": "off"
+            }
+        },
+        {
+            "files": ["commands.ts"],
+            "rules": {
+                "spaced-comment": "off"
+            }
+        },
+        {
+            "files": ["steps.ts", "cypress.config.ts"],
+            "rules": {
+                "@typescript-eslint/no-var-requires": "off"
+            }
+        }
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": ["temp.js", "**/vendor/*.js", "node_modules", "reports"],
+    "rules": {
+        "max-len": ["error", { "code": 120 }]
+    }
+}
