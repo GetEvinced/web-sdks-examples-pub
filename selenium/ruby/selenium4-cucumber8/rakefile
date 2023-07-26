@@ -1,0 +1,14 @@
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:test) do |t|
+  t.cucumber_opts = [
+    "--format pretty", # Any valid command line option can go here.
+    "--format junit -o reports/",
+    "--format html -o reports/index.html",
+    "-c",
+    "--publish-quiet",
+  ]
+
+end
+
+task :default => :features

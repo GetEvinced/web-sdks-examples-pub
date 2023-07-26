@@ -1,0 +1,20 @@
+source "https://rubygems.org"
+gem 'rspec'
+gem 'selenium-webdriver', '4.8.0'
+gem 'rake'
+gem 'cucumber', '8.0.0'
+
+user = ENV['JFROG_USER']
+pass = ENV['JFROG_PASS']
+
+if (ENV['RUBY_SDK_VER'])
+  source "https://#{user}:#{pass}@evinced.jfrog.io/artifactory/api/gems/restricted-ruby" do
+    gem 'evinced-rubysdk', ENV['RUBY_SDK_VER']
+  end
+elsif (ENV['RUBY_SDK_LOCAL'])
+    gem 'evinced-rubysdk', path: ENV['RUBY_SDK_LOCAL']
+else
+  source "https://#{user}:#{pass}@evinced.jfrog.io/artifactory/api/gems/restricted-ruby" do
+    gem 'evinced-rubysdk'
+  end
+end
