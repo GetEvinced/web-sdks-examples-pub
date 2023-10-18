@@ -232,13 +232,6 @@ exports.config = {
   // before: function (capabilities, specs) {
   // },
   before: async function(capabilities, specs) {
-    browser.evincedState = {
-      isRecording: false,
-      lastRecordingUrl: null,
-      recordingStateByUrl: {},
-      initOptions: null,
-    };
-
     const token = process.env.AUTH_TOKEN;
     const serviceId = process.env.AUTH_SERVICE_ID;
     await Evinced.setOfflineCredentials({

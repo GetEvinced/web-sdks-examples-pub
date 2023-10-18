@@ -9,7 +9,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -56,7 +56,7 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -147,10 +147,10 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    
+
     //reporters: ['spec','video','cucumberjs-json','mochawesome'],
     reporters: [
-        'spec', 
+        'spec',
 
         [ 'cucumberjs-json', {
             jsonFolder: 'reports/cucumber-json',
@@ -186,7 +186,7 @@ exports.config = {
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
     },
-    
+
     //
     // =====
     // Hooks
@@ -241,14 +241,6 @@ exports.config = {
      */
 
     before: function (capabilities, specs) {
-
-        browser.evincedState = {
-            isRecording: false,
-            lastRecordingUrl: null,
-            recordingStateByUrl: {},
-            initOptions: null
-        };
-
         const token = process.env.AUTH_TOKEN;
         const serviceId = process.env.AUTH_SERVICE_ID;
         Evinced.setOfflineCredentials({
@@ -262,7 +254,7 @@ exports.config = {
             fs.mkdirSync('reports/evReports');
         }
     },
-    
+
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -329,7 +321,7 @@ exports.config = {
      */
     // afterFeature: function (uri, feature) {
     // },
-    
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
