@@ -9,7 +9,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <playwright.sdk.version>1.3.2</playwright.sdk.version>
-    <playwright.version>1.32.0</playwright.version>
+    <playwright.version>1.42.0</playwright.version>
   </properties>
 
   <dependencies>
