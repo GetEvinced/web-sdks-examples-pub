@@ -1,0 +1,13 @@
+{
+  "axeConfig": {
+    "rules": {
+      "link-name": { "enabled": false }
+    }
+  },
+  "logging": {
+    "LOGGING_LEVEL": "error",
+    "ADD_LOGGING_CONTEXT": true
+  },
+  "skipValidations": [],
+  "rootSelector": null
+}

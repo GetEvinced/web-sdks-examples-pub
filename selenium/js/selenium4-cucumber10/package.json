@@ -1,0 +1,13 @@
+{
+  "name": "selenium4-cucumber10",
+  "version": "1.0.0",
+  "description": "This is an example of using JS Selenium SDK with Cucumber-js ver.10",
+  "author": "Dominik-Makuch-Evinced",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.4.0",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.2",
+    "@evinced/js-selenium-sdk": "^1.0.2",
+    "chromedriver": "^124.0.4",
+    "selenium-webdriver": "^4.19.0"
+  }
+}
