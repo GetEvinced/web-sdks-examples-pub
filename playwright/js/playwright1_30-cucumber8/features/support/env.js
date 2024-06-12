@@ -20,7 +20,6 @@ setDefaultTimeout(20 * 1000);
 Before(async (scenario) => {
   console.log(`\n\n\n\t\t*********\n\t\t* ${scenario.pickle.name}\n\t\t*********\n\n\n`);
 
-  setAuthData();
   const serviceId = process.env.AUTH_SERVICE_ID;
   const token = process.env.AUTH_TOKEN;
   setOfflineCredentials({
