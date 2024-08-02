@@ -5,3 +5,4 @@ Web SDKs examples project is a set of small test automation projects intended to
 About Evinced Accessibility Web SDKs: https://evinced.com/products/auto-test-sdks
 
 User Guides: https://developer.evinced.com/
+
