@@ -1,35 +1,38 @@
-import {EvincedSDK, setOfflineCredentials} from '@evinced/js-testcafe-sdk';
-import homePage from './home-page';
-import secondPage from './second-page';
+import { setCredentials, EvincedSDK } from '@evinced/js-testcafe-sdk';
 
-let foundIssues = [];
+let evinced;
+let reportBaseName = 'evincedTest';
 
-fixture `Example test with use of Evinced SDK in before after hooks`
+fixture `Using beforeEach and afterEach hooks for Continuous mode`
   .page `https://demo.evinced.com/`
-  .before(async ctx => {
-    setOfflineCredentials({
-      serviceId: process.env.AUTH_SERVICE_ID,
-      token: process.env.AUTH_TOKEN,
-    })
-  })
-  .beforeEach(async t => {
-    global.evinced = new EvincedSDK(t);
-    await evinced.evStart();
-  })
-  .afterEach(async t => {
-    foundIssues = await evinced.evStop();
-    await evinced.evSaveFile(foundIssues, 'json', 'before-after-hook-evSaveFile.json');
+.before(async () => {
+  await setCredentials({ // please change it according to your naming
+    serviceId: process.env.AUTH_SERVICE_ID,
+    secret: process.env.AUTH_SECRET,
+  });
+})
+.beforeEach(async t => {
+  evinced = new EvincedSDK(t);
+  await evinced.evStart();
+})
+.afterEach(async t => {
+  const issues = await evinced.evStop();
+  console.log(`evStop: issues: ${issues.length}`)
+
+  await evinced.evSaveFile(issues, 'html', `./${t.test.name}_${reportBaseName}.html`);
 });
 
 
-test('Should see results for chosen options and record all accessibility issues found using evStart-evStop in before/after hooks', async t => {
-  await evinced.evStart();
-
+test('test evStart-stop', async t => {
   await t
-  .click(homePage.typeDropdown)
-  .click(homePage.tinyHomeOption)
-  .click(homePage.whereDropdown)
-  .click(homePage.eastCoastOption)
-  .click(homePage.searchButton)
-  .expect(secondPage.pageHeader.innerText).match(/Results for: Tiny House in East Coast/);
+  .click('div:nth-child(1) > div > div.dropdown.line > p')
+  .click('div:nth-child(1) > div > ul > li:nth-child(2)')
+  .wait(2000); // a timeout is optional, added it to keep the test flow smooth
+});
+
+test('test evStart-stop SPA. 2 pages', async t => {
+  await t.navigateTo('https://getevinced.github.io/spa-example/#/')
+  .wait(1000) // this timeout is mandatory since we need some time to gather issues
+    .navigateTo('https://getevinced.github.io/spa-example/#/services')
+    .wait(1000) // this timeout is mandatory since we need some time to gather issues
 });

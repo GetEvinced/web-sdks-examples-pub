@@ -1,6 +1,6 @@
 import {EvincedSDK, setOfflineCredentials} from '@evinced/js-testcafe-sdk';
-import homePage from './home-page';
-import secondPage from './second-page';
+import homePage from '../resources/home-page';
+import secondPage from '../resources/second-page';
 
 fixture `Example test with use of Evinced SDK`
   .page `https://demo.evinced.com/`
@@ -43,7 +43,8 @@ test('Should see results for chosen options and record all accessibility issues 
 
   const foundIssues = await evinced.evAnalyze();
 
-  await evinced.evSaveFile(foundIssues, 'json', 'evAnalyzeReport.json');
+  await evinced.evSaveFile(foundIssues, 'json', './evincedReports/evAnalyzeReport.json');
+  await evinced.evSaveFile(foundIssues, 'csv', './evincedReports/evAnalyzeReport.csv');
 });
 
 test('Should see results for chosen options and record all accessibility issues found using evStart-evStop and save html report', async t => {
@@ -59,7 +60,8 @@ test('Should see results for chosen options and record all accessibility issues 
 
   const foundIssues = await evinced.evStop();
 
-  await evinced.evSaveFile(foundIssues, 'html', 'evSaveFileReport.html');
+  await evinced.evSaveFile(foundIssues, 'html', './evincedReports/evSaveFileReport.html');
+  await evinced.evSaveFile(foundIssues, "sarif", "./evincedReports/evSaveFileReport.sarif");
 });
 
 test('Should see results for chosen options and record accessibility issues found only in scope of specified root selector', async t => {

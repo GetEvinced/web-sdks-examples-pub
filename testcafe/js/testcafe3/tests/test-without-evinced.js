@@ -1,5 +1,5 @@
-import homePage from './home-page';
-import secondPage from './second-page';
+import homePage from '../resources/home-page';
+import secondPage from '../resources/second-page';
 
 fixture `Example test without using Evinced SDK`
     .page `https://demo.evinced.com/`;
