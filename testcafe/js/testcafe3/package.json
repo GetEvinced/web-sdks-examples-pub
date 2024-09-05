@@ -1,0 +1,11 @@
+{
+  "name": "testcafe-example",
+  "version": "0.1.0",
+  "description": "Basic TestCafe example with Evinced",
+  "main": "tests/test.js",
+  "dependencies": {
+    "@evinced/js-testcafe-sdk": "^1.2.2",
+    "testcafe": "3.6.1",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

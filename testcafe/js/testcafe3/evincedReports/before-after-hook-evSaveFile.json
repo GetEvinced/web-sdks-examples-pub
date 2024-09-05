@@ -1,0 +1,1120 @@
+[
+  {
+    "id": "ca1b5ccc-a8bb-4b97-96bb-490bc02802b8",
+    "index": "I1",
+    "hidden": false,
+    "validation": {
+      "id": "c1eee7e8-8bfe-4288-be03-c41132cc5dd0"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "214ac546-f818-4034-ad0a-ac058db81305",
+        "domSnippet": "<div class=\"dropdown line\"><p>Select</p></div>",
+        "componentId": "ce13d0bb",
+        "index": "S1",
+        "selector": ".block-dropdown:nth-child(1) > .dropholder > .dropdown.line",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 203.96875,
+          "y": 576.1875,
+          "height": 23.9375,
+          "width": 250,
+          "top": 576.1875,
+          "left": 203.96875,
+          "right": 453.96875,
+          "bottom": 600.125
+        }
+      }
+    ],
+    "type": {
+      "id": "WRONG_SEMANTIC_ROLE",
+      "newId": "86649b9b-96e1-4abb-903a-5ec30f0af526",
+      "name": "Interactable Role"
+    },
+    "firstSeenTime": 1725360375674,
+    "lastSeenTime": 1725360378093,
+    "additionalInformation": {},
+    "summary": "Screen readers do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent screen readers from interpreting an element as interactable.  \n**Effect:** Screen reader either does not navigate to the element or navigates to it but does not correctly convey its function to the user.  \n**Suggested Solutions:**\n* Change the element's tag to correctly reflect its type, ie: <*button*>, <*a*> or <*input /*>  \n* Add attributes (ARIA) to indicate the element's type and/or potential functionalities.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.3.1",
+        "description": "1.3.1 Info and Relationships  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+      },
+      {
+        "id": "WCAG-4.1.2",
+        "description": "4.1.2 Name, Role, Value  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/interactable-role",
+    "signature": "2ffa5563",
+    "canonicalSignature": "2ffa5563"
+  },
+  {
+    "id": "b87b927d-20e1-468f-93cc-0b7b0365e5d9",
+    "index": "I2",
+    "hidden": false,
+    "validation": {
+      "id": "123f117a-88f1-48d8-a109-f1e03fe168aa"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "214ac546-f818-4034-ad0a-ac058db81305",
+        "domSnippet": "<div class=\"dropdown line\"><p>Select</p></div>",
+        "componentId": "ce13d0bb",
+        "index": "S1",
+        "selector": ".block-dropdown:nth-child(1) > .dropholder > .dropdown.line",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 203.96875,
+          "y": 576.1875,
+          "height": 23.9375,
+          "width": 250,
+          "top": 576.1875,
+          "left": 203.96875,
+          "right": 453.96875,
+          "bottom": 600.125
+        }
+      }
+    ],
+    "type": {
+      "id": "NOT_FOCUSABLE",
+      "newId": "724b3853-33d3-47b9-80bd-2401abcd5ad4",
+      "name": "Keyboard Accessible"
+    },
+    "firstSeenTime": 1725360375674,
+    "lastSeenTime": 1725360378093,
+    "additionalInformation": {},
+    "summary": "Keyboard-only users do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent the keyboard User-Agent from interpreting an element as interactable.  \n**Effect:** Interface interaction is limited for keyboard-only users.  \n**Suggested Solutions:**\n* (Recommended) Add an element that better reflects the element's purpose. Interactive elements do not need any additions because they are focusable by nature. \n* Add a *tabindex* attribute with the value of “0” to the element.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-2.1.1",
+        "description": "2.1.1 Keyboard  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/keyboard-accessible",
+    "signature": "74c6fcce",
+    "canonicalSignature": "74c6fcce"
+  },
+  {
+    "id": "8733bdac-af49-4601-b33f-164821ff8293",
+    "index": "I3",
+    "hidden": false,
+    "validation": {
+      "id": "94842104-4ace-4dd6-b31b-454d719e28f4"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "a6b789ea-fdf0-4abc-bc5c-0796d30fc01d",
+        "domSnippet": "<div class=\"dropdown line\"><p>Select</p></div>",
+        "componentId": "ce13d0bb",
+        "index": "S2",
+        "selector": ".block-dropdown:nth-child(2) > .dropholder > .dropdown.line",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 475.96875,
+          "y": 576.1875,
+          "height": 23.9375,
+          "width": 250,
+          "top": 576.1875,
+          "left": 475.96875,
+          "right": 725.96875,
+          "bottom": 600.125
+        }
+      }
+    ],
+    "type": {
+      "id": "WRONG_SEMANTIC_ROLE",
+      "newId": "86649b9b-96e1-4abb-903a-5ec30f0af526",
+      "name": "Interactable Role"
+    },
+    "firstSeenTime": 1725360375674,
+    "lastSeenTime": 1725360380346,
+    "additionalInformation": {},
+    "summary": "Screen readers do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent screen readers from interpreting an element as interactable.  \n**Effect:** Screen reader either does not navigate to the element or navigates to it but does not correctly convey its function to the user.  \n**Suggested Solutions:**\n* Change the element's tag to correctly reflect its type, ie: <*button*>, <*a*> or <*input /*>  \n* Add attributes (ARIA) to indicate the element's type and/or potential functionalities.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.3.1",
+        "description": "1.3.1 Info and Relationships  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+      },
+      {
+        "id": "WCAG-4.1.2",
+        "description": "4.1.2 Name, Role, Value  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/interactable-role",
+    "signature": "43bc8aba",
+    "canonicalSignature": "43bc8aba"
+  },
+  {
+    "id": "9da16405-85db-46ff-aadf-c24e28e71d02",
+    "index": "I4",
+    "hidden": false,
+    "validation": {
+      "id": "43bd898e-5728-42aa-8ef9-1d1b0e771c58"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "a6b789ea-fdf0-4abc-bc5c-0796d30fc01d",
+        "domSnippet": "<div class=\"dropdown line\"><p>Select</p></div>",
+        "componentId": "ce13d0bb",
+        "index": "S2",
+        "selector": ".block-dropdown:nth-child(2) > .dropholder > .dropdown.line",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 475.96875,
+          "y": 576.1875,
+          "height": 23.9375,
+          "width": 250,
+          "top": 576.1875,
+          "left": 475.96875,
+          "right": 725.96875,
+          "bottom": 600.125
+        }
+      }
+    ],
+    "type": {
+      "id": "NOT_FOCUSABLE",
+      "newId": "724b3853-33d3-47b9-80bd-2401abcd5ad4",
+      "name": "Keyboard Accessible"
+    },
+    "firstSeenTime": 1725360375674,
+    "lastSeenTime": 1725360380346,
+    "additionalInformation": {},
+    "summary": "Keyboard-only users do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent the keyboard User-Agent from interpreting an element as interactable.  \n**Effect:** Interface interaction is limited for keyboard-only users.  \n**Suggested Solutions:**\n* (Recommended) Add an element that better reflects the element's purpose. Interactive elements do not need any additions because they are focusable by nature. \n* Add a *tabindex* attribute with the value of “0” to the element.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-2.1.1",
+        "description": "2.1.1 Keyboard  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/keyboard-accessible",
+    "signature": "a9e99c77",
+    "canonicalSignature": "a9e99c77"
+  },
+  {
+    "id": "1589d459-fcd0-40fd-ac7e-6215cb6bf0e3",
+    "index": "I5",
+    "hidden": false,
+    "validation": {
+      "id": "e04ee79e-7eb6-4369-99c2-146e1ab31cea"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "d7b2c6e7-a500-49ad-8d55-d2e3fc8ab112",
+        "domSnippet": "<a class=\"search-btn\">Search</a>",
+        "componentId": "a2d2a84e",
+        "index": "S3",
+        "selector": ".search-btn",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 906.015625,
+          "y": 540.25,
+          "height": 85,
+          "width": 181,
+          "top": 540.25,
+          "left": 906.015625,
+          "right": 1087.015625,
+          "bottom": 625.25
+        }
+      }
+    ],
+    "type": {
+      "id": "ANCHOR_WITHOUT_HREF",
+      "newId": "5243d9b7-2c3e-4ca3-83d4-d141ca98d39d",
+      "name": "Anchor without href attribute"
+    },
+    "firstSeenTime": 1725360375674,
+    "lastSeenTime": 1725360375674,
+    "additionalInformation": {},
+    "summary": "Anchor elements (<a>) must have an \"href\" attribute to be registered to the accessibility tree as links.",
+    "description": "**Cause:** The <a> element lacks an href attribute, and that nullifies its semantic meaning.\n**Effect:** Some screen readers (mainly on Windows) will read the element as plain text without indicating it is a link, so screen reader users won’t perceive its actual function.\n**Suggested Solutions:**\n* If the element is actually a link, you can add an href attribute that points to itself (e.g. <a href=\"#\">).\n* If the element is not a link, consider replacing the element with an element with a more accurate semantics (e.g. <button>)\n* Change the element’s semantics to be more accurate by using the role attribute (e.g. <a role=\"button\">). Note that in this case certain roles will still require additional specific attributes.\n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.3.1",
+        "description": "1.3.1 Info and Relationships  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+      },
+      {
+        "id": "WCAG-4.1.2",
+        "description": "4.1.2 Name, Role, Value  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/anchor-without-href",
+    "signature": "1a46f48d",
+    "canonicalSignature": "1a46f48d"
+  },
+  {
+    "id": "83b259b6-1f89-4e8a-9a04-474de1965f04",
+    "index": "I6",
+    "hidden": false,
+    "validation": {
+      "id": "adf03c16-d70f-407a-a850-24ab4afc6077"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "d7b2c6e7-a500-49ad-8d55-d2e3fc8ab112",
+        "domSnippet": "<a class=\"search-btn\">Search</a>",
+        "componentId": "a2d2a84e",
+        "index": "S3",
+        "selector": ".search-btn",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 906.015625,
+          "y": 540.25,
+          "height": 85,
+          "width": 181,
+          "top": 540.25,
+          "left": 906.015625,
+          "right": 1087.015625,
+          "bottom": 625.25
+        }
+      }
+    ],
+    "type": {
+      "id": "NOT_FOCUSABLE",
+      "newId": "724b3853-33d3-47b9-80bd-2401abcd5ad4",
+      "name": "Keyboard Accessible"
+    },
+    "firstSeenTime": 1725360375674,
+    "lastSeenTime": 1725360375674,
+    "additionalInformation": {},
+    "summary": "Keyboard-only users do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent the keyboard User-Agent from interpreting an element as interactable.  \n**Effect:** Interface interaction is limited for keyboard-only users.  \n**Suggested Solutions:**\n* (Recommended) Add an element that better reflects the element's purpose. Interactive elements do not need any additions because they are focusable by nature. \n* Add a *tabindex* attribute with the value of “0” to the element.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-2.1.1",
+        "description": "2.1.1 Keyboard  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/keyboard-accessible",
+    "signature": "64cae8b1",
+    "canonicalSignature": "64cae8b1"
+  },
+  {
+    "id": "c60f6752-4607-4a1e-9a7c-d5be44be3d5a",
+    "index": "I7",
+    "hidden": false,
+    "validation": {
+      "id": "ba5ce6ed-962c-4dec-b628-855d7371b117"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "79f0fe7a-6c28-4006-bcd8-3e3d470cdef1",
+        "domSnippet": "<ul class=\"dropdownMenu active showMenu\"><li>Caravan</li><li>Tiny House</li><li>Treehouse</li><li>Tent</li><li>Backyard</li></ul>",
+        "componentId": "febc4e10",
+        "index": "S4",
+        "selector": ".block-dropdown:nth-child(1) > .dropholder > ul",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 203.96875,
+          "y": 619.25,
+          "height": 225,
+          "width": 250,
+          "top": 619.25,
+          "left": 203.96875,
+          "right": 453.96875,
+          "bottom": 844.25
+        }
+      }
+    ],
+    "type": {
+      "id": "WRONG_SEMANTIC_ROLE",
+      "newId": "86649b9b-96e1-4abb-903a-5ec30f0af526",
+      "name": "Interactable Role"
+    },
+    "firstSeenTime": 1725360376240,
+    "lastSeenTime": 1725360378093,
+    "additionalInformation": {},
+    "summary": "Screen readers do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent screen readers from interpreting an element as interactable.  \n**Effect:** Screen reader either does not navigate to the element or navigates to it but does not correctly convey its function to the user.  \n**Suggested Solutions:**\n* Change the element's tag to correctly reflect its type, ie: <*button*>, <*a*> or <*input /*>  \n* Add attributes (ARIA) to indicate the element's type and/or potential functionalities.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.3.1",
+        "description": "1.3.1 Info and Relationships  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+      },
+      {
+        "id": "WCAG-4.1.2",
+        "description": "4.1.2 Name, Role, Value  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/interactable-role",
+    "signature": "703a26a7",
+    "canonicalSignature": "703a26a7"
+  },
+  {
+    "id": "398ef458-e364-4473-9a34-7b602d5dadc0",
+    "index": "I8",
+    "hidden": false,
+    "validation": {
+      "id": "29466915-b0c8-464f-bf35-cc683aad00eb"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "79f0fe7a-6c28-4006-bcd8-3e3d470cdef1",
+        "domSnippet": "<ul class=\"dropdownMenu active showMenu\"><li>Caravan</li><li>Tiny House</li><li>Treehouse</li><li>Tent</li><li>Backyard</li></ul>",
+        "componentId": "febc4e10",
+        "index": "S4",
+        "selector": ".block-dropdown:nth-child(1) > .dropholder > ul",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 203.96875,
+          "y": 619.25,
+          "height": 225,
+          "width": 250,
+          "top": 619.25,
+          "left": 203.96875,
+          "right": 453.96875,
+          "bottom": 844.25
+        }
+      }
+    ],
+    "type": {
+      "id": "NOT_FOCUSABLE",
+      "newId": "724b3853-33d3-47b9-80bd-2401abcd5ad4",
+      "name": "Keyboard Accessible"
+    },
+    "firstSeenTime": 1725360376240,
+    "lastSeenTime": 1725360378093,
+    "additionalInformation": {},
+    "summary": "Keyboard-only users do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent the keyboard User-Agent from interpreting an element as interactable.  \n**Effect:** Interface interaction is limited for keyboard-only users.  \n**Suggested Solutions:**\n* (Recommended) Add an element that better reflects the element's purpose. Interactive elements do not need any additions because they are focusable by nature. \n* Add a *tabindex* attribute with the value of “0” to the element.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-2.1.1",
+        "description": "2.1.1 Keyboard  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/keyboard-accessible",
+    "signature": "7ef6c6ae",
+    "canonicalSignature": "7ef6c6ae"
+  },
+  {
+    "id": "5500d5bd-340c-4c02-9a16-9f56c601a1ef",
+    "index": "I9",
+    "hidden": false,
+    "validation": {
+      "id": "08cb4374-7657-41e1-8642-698aba1ebb35"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "9590f606-1875-4dbd-b671-11cc315c88a3",
+        "domSnippet": "<ul class=\"dropdownMenu showMenu\"><li>Canada</li><li>The Great Lakes</li><li>East Coast</li><li>West Coast</li><li>Down South</li><li>Middle America</li><li>Alaska</li><li>Hawaii</li></ul>",
+        "componentId": "69fbb8cb",
+        "index": "S5",
+        "selector": ".active",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "top": 619.25,
+          "right": 453.96875,
+          "bottom": 844.25,
+          "left": 203.96875,
+          "width": 250,
+          "height": 225,
+          "x": 203.96875,
+          "y": 619.25
+        }
+      }
+    ],
+    "type": {
+      "id": "AXE-SCROLLABLE-REGION-FOCUSABLE",
+      "newId": "e4d4390e-c29e-400d-8fbc-bec794a2b038",
+      "name": "Scrollable-region-focusable"
+    },
+    "firstSeenTime": 1725360376335,
+    "lastSeenTime": 1725360382253,
+    "additionalInformation": {
+      "axeData": {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag211",
+          "wcag213",
+          "TTv5",
+          "TT4.a",
+          "EN-301-549",
+          "EN-9.2.1.1",
+          "EN-9.2.1.3"
+        ],
+        "description": "Ensure elements that have scrollable content are accessible by keyboard",
+        "help": "Scrollable region must have keyboard access",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element should have focusable content"
+              },
+              {
+                "id": "focusable-element",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element should be focusable"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<ul class=\"dropdownMenu active showMenu\"><li>Canada</li><li>The Great Lakes</li><li>East Coast</li><li>West Coast</li><li>Down South</li><li>Middle America</li><li>Alaska</li><li>Hawaii</li></ul>",
+            "target": [
+              ".active"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+          }
+        ]
+      }
+    },
+    "summary": "Scrollable region must have keyboard access",
+    "description": "**Description:**\n\tEnsure elements that have scrollable content are accessible by keyboard\n\t**Failure Summary:**\n\tFix at least one (1) of the following\n* Element should have focusable content,* Element should be focusable",
+    "severity": {
+      "id": "SERIOUS",
+      "name": "Serious",
+      "newId": "5bd03118-5883-4f43-8831-1544af3afe7c"
+    },
+    "originalSeverity": {
+      "id": "SERIOUS",
+      "name": "Serious",
+      "newId": "5bd03118-5883-4f43-8831-1544af3afe7c"
+    },
+    "tags": [
+      {
+        "id": "WCAG-2.1.1",
+        "description": "2.1.1 Keyboard  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
+      },
+      {
+        "id": "WCAG-2.1.3",
+        "description": "2.1.3 Keyboard (No Exception)  (Level AAA)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG-AAA"
+      },
+      {
+        "id": "WCAG2.0"
+      },
+      {
+        "id": "axe-EN-301-549"
+      },
+      {
+        "id": "axe-EN-9.2.1.1"
+      },
+      {
+        "id": "axe-EN-9.2.1.3"
+      },
+      {
+        "id": "axe-TT4.a"
+      },
+      {
+        "id": "axe-TTv5"
+      },
+      {
+        "id": "axe-cat.keyboard"
+      },
+      {
+        "id": "axe-wcag211"
+      },
+      {
+        "id": "axe-wcag213"
+      },
+      {
+        "id": "axe-wcag2a"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/scrollable-region-focusable",
+    "signature": "0d02856e",
+    "canonicalSignature": "0d02856e"
+  },
+  {
+    "id": "945a5c32-1a76-488c-b145-d1d83bd8602c",
+    "index": "I10",
+    "hidden": false,
+    "validation": {
+      "id": "4d112a2e-2234-4d08-a52f-c4b77b5ac633"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "c8b9a571-82be-4020-a88b-966840eba9fe",
+        "domSnippet": "<li>Tiny House</li>",
+        "componentId": "00000000",
+        "index": "S6",
+        "selector": ".block-dropdown:nth-child(1) > .dropholder > ul > li:nth-child(2)",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "width": 0,
+          "height": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "type": {
+      "id": "AXE-COLOR-CONTRAST",
+      "newId": "41fbf576-e94e-4a71-ac4d-63f328e3a982",
+      "name": "Color-contrast"
+    },
+    "firstSeenTime": 1725360378294,
+    "lastSeenTime": 1725360378294,
+    "additionalInformation": {
+      "axeData": {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#695d52",
+                  "bgColor": "#faba40",
+                  "contrastRatio": 3.69,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<li>Tiny House</li>",
+                    "target": [
+                      ".block-dropdown:nth-child(1) > .dropholder > ul > li:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.69 (foreground color: #695d52, background color: #faba40, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li>Tiny House</li>",
+            "target": [
+              ".block-dropdown:nth-child(1) > .dropholder > ul > li:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.69 (foreground color: #695d52, background color: #faba40, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    },
+    "summary": "Elements must meet minimum color contrast ratio thresholds",
+    "description": "**Description:**\n\tEnsures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n\t**Failure Summary:**\n\tFix at least one (1) of the following\n* Element has insufficient color contrast of 3.69 (foreground color: #695d52, background color: #faba40, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
+    "severity": {
+      "id": "SERIOUS",
+      "name": "Serious",
+      "newId": "5bd03118-5883-4f43-8831-1544af3afe7c"
+    },
+    "originalSeverity": {
+      "id": "SERIOUS",
+      "name": "Serious",
+      "newId": "5bd03118-5883-4f43-8831-1544af3afe7c"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.4.3",
+        "description": "1.4.3 Contrast (Minimum)  (Level AA)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
+      },
+      {
+        "id": "WCAG-AA"
+      },
+      {
+        "id": "WCAG2.0"
+      },
+      {
+        "id": "axe-ACT"
+      },
+      {
+        "id": "axe-EN-301-549"
+      },
+      {
+        "id": "axe-EN-9.1.4.3"
+      },
+      {
+        "id": "axe-TT13.c"
+      },
+      {
+        "id": "axe-TTv5"
+      },
+      {
+        "id": "axe-cat.color"
+      },
+      {
+        "id": "axe-wcag143"
+      },
+      {
+        "id": "axe-wcag2aa"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/color-contrast",
+    "signature": "10ad6c32",
+    "canonicalSignature": "10ad6c32"
+  },
+  {
+    "id": "b4baeff1-7644-49e1-ba01-315f0fc416fd",
+    "index": "I11",
+    "hidden": false,
+    "validation": {
+      "id": "bcc2e66c-678c-4846-a5a0-99c3bd4b20ab"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "56e95417-beaf-4e22-9550-e9b935dc3c11",
+        "domSnippet": "<ul class=\"dropdownMenu active\"><li>Canada</li><li>The Great Lakes</li><li>East Coast</li><li>West Coast</li><li>Down South</li><li>Middle America</li><li>Alaska</li><li>Hawaii</li></ul>",
+        "componentId": "099e33df",
+        "index": "S7",
+        "selector": ".block-dropdown:nth-child(2) > .dropholder > ul",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 475.96875,
+          "y": 619.25,
+          "height": 225,
+          "width": 250,
+          "top": 619.25,
+          "left": 475.96875,
+          "right": 725.96875,
+          "bottom": 749.25
+        }
+      }
+    ],
+    "type": {
+      "id": "WRONG_SEMANTIC_ROLE",
+      "newId": "86649b9b-96e1-4abb-903a-5ec30f0af526",
+      "name": "Interactable Role"
+    },
+    "firstSeenTime": 1725360380346,
+    "lastSeenTime": 1725360380346,
+    "additionalInformation": {},
+    "summary": "Screen readers do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent screen readers from interpreting an element as interactable.  \n**Effect:** Screen reader either does not navigate to the element or navigates to it but does not correctly convey its function to the user.  \n**Suggested Solutions:**\n* Change the element's tag to correctly reflect its type, ie: <*button*>, <*a*> or <*input /*>  \n* Add attributes (ARIA) to indicate the element's type and/or potential functionalities.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.3.1",
+        "description": "1.3.1 Info and Relationships  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+      },
+      {
+        "id": "WCAG-4.1.2",
+        "description": "4.1.2 Name, Role, Value  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/interactable-role",
+    "signature": "5b5ffb02",
+    "canonicalSignature": "5b5ffb02"
+  },
+  {
+    "id": "aca34234-b393-41cc-80ee-b4233228f19c",
+    "index": "I12",
+    "hidden": false,
+    "validation": {
+      "id": "32d60f24-8dee-4f23-9a31-ef2129b11d43"
+    },
+    "skipIssue": false,
+    "elements": [
+      {
+        "id": "56e95417-beaf-4e22-9550-e9b935dc3c11",
+        "domSnippet": "<ul class=\"dropdownMenu active\"><li>Canada</li><li>The Great Lakes</li><li>East Coast</li><li>West Coast</li><li>Down South</li><li>Middle America</li><li>Alaska</li><li>Hawaii</li></ul>",
+        "componentId": "099e33df",
+        "index": "S7",
+        "selector": ".block-dropdown:nth-child(2) > .dropholder > ul",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "x": 475.96875,
+          "y": 619.25,
+          "height": 225,
+          "width": 250,
+          "top": 619.25,
+          "left": 475.96875,
+          "right": 725.96875,
+          "bottom": 749.25
+        }
+      }
+    ],
+    "type": {
+      "id": "NOT_FOCUSABLE",
+      "newId": "724b3853-33d3-47b9-80bd-2401abcd5ad4",
+      "name": "Keyboard Accessible"
+    },
+    "firstSeenTime": 1725360380346,
+    "lastSeenTime": 1725360380346,
+    "additionalInformation": {},
+    "summary": "Keyboard-only users do not interpret the element as interactable.",
+    "description": "**Cause:** Missing or incorrect semantics prevent the keyboard User-Agent from interpreting an element as interactable.  \n**Effect:** Interface interaction is limited for keyboard-only users.  \n**Suggested Solutions:**\n* (Recommended) Add an element that better reflects the element's purpose. Interactive elements do not need any additions because they are focusable by nature. \n* Add a *tabindex* attribute with the value of “0” to the element.  \n",
+    "severity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "originalSeverity": {
+      "id": "CRITICAL",
+      "name": "Critical",
+      "newId": "3c68eb41-9227-481d-8eec-9dc8956b19c4"
+    },
+    "tags": [
+      {
+        "id": "WCAG-2.1.1",
+        "description": "2.1.1 Keyboard  (Level A)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
+      },
+      {
+        "id": "WCAG-A"
+      },
+      {
+        "id": "WCAG2.0"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/keyboard-accessible",
+    "signature": "764c31f3",
+    "canonicalSignature": "764c31f3"
+  },
+  {
+    "id": "bc6443dd-b5c8-4b25-b37b-61a22c076128",
+    "index": "I13",
+    "hidden": false,
+    "validation": {
+      "id": "c2350529-ac6c-49d5-9cc5-e2b642c27237"
+    },
+    "skipIssue": false,
+    "type": {
+      "id": "AXE-COLOR-CONTRAST",
+      "newId": "41fbf576-e94e-4a71-ac4d-63f328e3a982",
+      "name": "Color-contrast"
+    },
+    "elements": [
+      {
+        "id": "b3efce66-ae6d-4617-94e2-306d9de1fad1",
+        "domSnippet": "<li>East Coast</li>",
+        "componentId": "00000000",
+        "index": "S8",
+        "selector": ".block-dropdown:nth-child(2) > .dropholder > ul > li:nth-child(3)",
+        "pageUrl": "https://demo.evinced.com/",
+        "pageTitle": "Home | Evinced, Demo site",
+        "boundingBox": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "width": 0,
+          "height": 0,
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "firstSeenTime": 1725360382253,
+    "lastSeenTime": 1725360382253,
+    "additionalInformation": {
+      "axeData": {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#695d52",
+                  "bgColor": "#faba40",
+                  "contrastRatio": 3.69,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<li>East Coast</li>",
+                    "target": [
+                      ".block-dropdown:nth-child(2) > .dropholder > ul > li:nth-child(3)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.69 (foreground color: #695d52, background color: #faba40, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li>East Coast</li>",
+            "target": [
+              ".block-dropdown:nth-child(2) > .dropholder > ul > li:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.69 (foreground color: #695d52, background color: #faba40, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    },
+    "summary": "Elements must meet minimum color contrast ratio thresholds",
+    "description": "**Description:**\n\tEnsures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n\t**Failure Summary:**\n\tFix at least one (1) of the following\n* Element has insufficient color contrast of 3.69 (foreground color: #695d52, background color: #faba40, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
+    "severity": {
+      "id": "SERIOUS",
+      "name": "Serious",
+      "newId": "5bd03118-5883-4f43-8831-1544af3afe7c"
+    },
+    "originalSeverity": {
+      "id": "SERIOUS",
+      "name": "Serious",
+      "newId": "5bd03118-5883-4f43-8831-1544af3afe7c"
+    },
+    "tags": [
+      {
+        "id": "WCAG-1.4.3",
+        "description": "1.4.3 Contrast (Minimum)  (Level AA)",
+        "link": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
+      },
+      {
+        "id": "WCAG-AA"
+      },
+      {
+        "id": "WCAG2.0"
+      },
+      {
+        "id": "axe-ACT"
+      },
+      {
+        "id": "axe-EN-301-549"
+      },
+      {
+        "id": "axe-EN-9.1.4.3"
+      },
+      {
+        "id": "axe-TT13.c"
+      },
+      {
+        "id": "axe-TTv5"
+      },
+      {
+        "id": "axe-cat.color"
+      },
+      {
+        "id": "axe-wcag143"
+      },
+      {
+        "id": "axe-wcag2aa"
+      }
+    ],
+    "knowledgeBaseLink": "https://knowledge.evinced.com/system-validations/color-contrast",
+    "signature": "385abb36",
+    "canonicalSignature": "385abb36"
+  }
+]
