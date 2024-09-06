@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "google",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "ignorePatterns": ["temp.js", "**/vendor/*.js", "node_modules", "reports"],
+    "rules": {
+        "max-len": ["error", { "code": 120 }]
+    }
+}
