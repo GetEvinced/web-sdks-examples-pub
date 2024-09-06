@@ -1,0 +1,30 @@
+{
+  "name": "@evinced/js-wdio7-mocha-example",
+  "version": "1.0.0",
+  "description": "Evinced WDIO SDK example for WDIO 7.x with Mocha; JS language",
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "@wdio/cli": "^7.32.2",
+    "@wdio/local-runner": "^7.32.3",
+    "@wdio/mocha-framework": "7.30.2",
+    "@wdio/spec-reporter": "^7.31.1",
+    "chromedriver": "^127.0.0",
+    "eslint": "^8.33.0",
+    "eslint-config-google": "^0.14.0",
+    "wdio-chromedriver-service": "^7.3.2",
+    "wdio-html-nice-reporter": "^7.9.1"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.mjs",
+    "lint": "eslint test/specs --ext .mjs .js,.jsx,.ts,.tsx",
+    "report": "node node_modules/wdio-html-nice-reporter/lib/makeReport.js master-report.html 'reports/html-reports/'"
+  },
+  "dependencies": {
+    "@evinced/webdriverio-sdk": "^2.6.0",
+    "log4js": "^6.9.1"
+  }
+}
