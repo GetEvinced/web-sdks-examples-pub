@@ -5,7 +5,7 @@
   "main": "tests/test.js",
   "dependencies": {
     "@evinced/js-testcafe-sdk": "^1.2.2",
-    "testcafe": "3.6.1",
+    "testcafe": "3.7.0",
     "testcafe-reporter-html": "^1.4.6"
   }
 }
